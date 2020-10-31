@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <NavBar />
+    <NotificationContainer />
     <router-view :key="$route.fullPath" />
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue'
+import NotificationContainer from '@/components/NotificationContainer.vue'
 
 export default {
   components: {
-    NavBar
+    NavBar,
+    NotificationContainer
   }
 }
 </script>
@@ -99,6 +102,9 @@ small {
 }
 .-text-error {
   color: tomato;
+}
+.-text-success {
+  color: #000;
 }
 .-text-gray {
   color: rgba(0, 0, 0, 0.5);
