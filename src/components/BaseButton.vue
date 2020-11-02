@@ -36,6 +36,7 @@ export default {
   font-weight: 600;
   white-space: nowrap;
   transition: all 0.2s linear;
+  cursor: pointer;
 }
 .button:hover {
   -webkit-transform: scale(1.02);
